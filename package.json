@@ -1,24 +1,25 @@
 {
-  "name": "webxr-workshop",
-  "version": "1.0.0",
-  "author": "Ayşegül Yönet",
-  "description": "FrontEndMasters - 3D on the Web & WebXR Course code samples",
-  "github": "https://github.com/https://github.com/Yonet/WebXRWorkshop",
-  "scripts": {
-    "dev": "concurrently -k \"tsc -p ./src/server -w\" \"tsc -p ./src/client -w\" \"nodemon ./dist/server/server.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./dist/server/server.js"
-  },
-  "devDependencies": {
-    "@types/dat.gui": "^0.7.6",
-    "@types/express": "^4.17.7",
-    "@types/node": "^13.13.15",
-    "concurrently": "^5.3.0",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.4",
-    "typescript": "^4.1.2"
-  },
-  "dependencies": {
-    "three": "^0.122.0"
-  }
+    "name": "webxr-workshop",
+    "version": "1.0.0",
+    "author": "Ayşegül Yönet",
+    "description": "FrontEndMasters - 3D on the Web & WebXR Course code samples",
+    "github": "https://github.com/https://github.com/Yonet/WebXRWorkshop",
+    "scripts": {
+        "dev": "concurrently -k \"tsc -p ./src/server -w\" \"tsc -p ./src/client -w\" \"nodemon ./dist/server/server.js\"",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ./dist/server/server.js",
+        "gen-cert": "openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -subj '/CN=localhost' -nodes"
+    },
+    "devDependencies": {
+        "@types/dat.gui": "^0.7.6",
+        "@types/express": "^4.17.7",
+        "@types/node": "^13.13.15",
+        "concurrently": "^5.3.0",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.4",
+        "typescript": "^4.1.2"
+    },
+    "dependencies": {
+        "three": "^0.122.0"
+    }
 }
